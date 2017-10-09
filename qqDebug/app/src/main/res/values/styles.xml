@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="Widget.ProgressHintBase" parent="android:Widget.Holo.SeekBar"/>
+    <style name="ProgressHintPopupAnimation">
+        <item name="@android:windowEnterAnimation">@anim/progress_hint_popup_show</item>
+        <item name="@android:windowExitAnimation">@anim/progress_hint_popup_hide</item>
+    </style>
+    <style name="Widget.ProgressHint" parent="Widget.ProgressHintBase">
+        <item name="popupLayout">@layout/progress_hint_popup</item>
+        <item name="popupStyle">follow</item>
+        <item name="popupAnimationStyle">@style/ProgressHintPopupAnimation</item>
+        <item name="popupOffset">0dp</item>
+        <item name="popupAlwaysShown">false</item>
+        <item name="popupDraggable">true</item>
+    </style>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="action_top">5dp</dimen>
+    <dimen name="action_left">100dp</dimen>
+    <dimen name="action_text_left">200dp</dimen>
+    <dimen name="action_text_size">20sp</dimen>
+    <dimen name="action_number_left">10dp</dimen>
+</resources>

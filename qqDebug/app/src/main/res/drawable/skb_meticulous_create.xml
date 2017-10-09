@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2008-2016 UBT Corporation.All rights reserved.
+  ~ Redistribution,modification, and use in source and binary forms
+  ~ are not permitted unless otherwise authorized by UBT.
+  -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <solid android:color="#99000000" />
+            <corners android:radius="8px"/>
+        </shape>
+    </item>
+
+
+    <item android:id="@android:id/progress">
+
+        <clip>
+            <shape>
+                <solid android:color="#ffffff"/>
+                <corners android:radius="8px"/>
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>
