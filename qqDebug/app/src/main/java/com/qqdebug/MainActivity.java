@@ -5,11 +5,11 @@ import com.google.gson.reflect.TypeToken;
 
 import com.qqdebug.adapter.EditActionListAdapter;
 import com.qqdebug.bean.ActionBean;
+import com.qqdebug.util.InputMethod;
 import com.qqdebug.utils.GsonUtil;
 import com.qqdebug.utils.PermissionHelper;
 import com.qqdebug.utils.PrefUtils;
 import com.ubt.ip.client.api.MotorApi;
-import com.ubt.ip.client.util.InputMethod;
 
 import android.Manifest;
 import android.content.Intent;

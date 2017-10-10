@@ -4,8 +4,8 @@ import com.qqdebug.ActionDebugActivity;
 import com.qqdebug.MainActivity;
 import com.qqdebug.R;
 import com.qqdebug.bean.ActionBean;
+import com.qqdebug.util.InputMethod;
 import com.qqdebug.utils.PrefUtils;
-import com.ubt.ip.client.util.InputMethod;
 
 import android.content.Context;
 import android.content.Intent;
