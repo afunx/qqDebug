@@ -3,12 +3,11 @@ package com.ubt.ip.client.api;
 import android.util.Log;
 
 import com.ubt.ip.client.bean.MotorBean;
+import com.ubt.ip.client.constants.ClientConstants;
 import com.ubt.ip.client.listener.MotorListener;
 import com.ubt.ip.client.service.MotorService;
-import com.ubt.ip.client.constants.ClientConstants;
 import com.ubt.ip.client.util.MotorUtil;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -23,6 +22,7 @@ public class MotorApi implements MotorService {
 
     private MotorApi() {
         mMotorUtil = new MotorUtil();
+        Log.e(TAG, "MotorApi VERSION v0.8.1");
     }
 
     /**
