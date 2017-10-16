@@ -1,286 +1,297 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
 
     <Button
-            android:layout_marginLeft="40dp"
-            android:id="@+id/btn_1"
-            android:text="舵机1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        android:id="@+id/btn_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="舵机1"/>
 
     <Button
-            android:layout_marginLeft="40dp"
-            android:layout_below="@id/btn_1"
-            android:id="@+id/btn_2"
-            android:text="舵机2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        android:id="@+id/btn_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_1"
+        android:layout_marginLeft="40dp"
+        android:text="舵机2"/>
 
     <Button
-            android:layout_below="@id/btn_2"
-            android:id="@+id/btn_3"
-            android:text="舵机3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        android:id="@+id/btn_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_2"
+        android:text="舵机3"/>
 
     <Button
-            android:layout_below="@id/btn_2"
-            android:layout_toRightOf="@id/btn_3"
-            android:id="@+id/btn_4"
-            android:text="舵机4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        android:id="@+id/btn_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_2"
+        android:layout_toRightOf="@id/btn_3"
+        android:text="舵机4"/>
 
     <Button
-            android:layout_marginLeft="40dp"
-            android:layout_below="@id/btn_3"
-            android:id="@+id/btn_5"
-            android:text="舵机5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        android:id="@+id/btn_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_3"
+        android:text="舵机5"/>
 
     <Button
-            android:layout_below="@id/btn_5"
-            android:id="@+id/btn_6"
-            android:text="舵机6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        android:id="@+id/btn_led"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/btn_5"
+        android:layout_toRightOf="@id/btn_5"
+        android:text="灯效"
+        />
 
     <Button
-            android:layout_below="@id/btn_5"
-            android:layout_toRightOf="@id/btn_6"
-            android:id="@+id/btn_7"
-            android:text="舵机7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        android:id="@+id/btn_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_5"
+        android:text="舵机6"/>
+
+    <Button
+        android:id="@+id/btn_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_5"
+        android:layout_toRightOf="@id/btn_6"
+        android:text="舵机7"/>
 
 
     <Button
-            android:id="@+id/btn_copy"
-            android:layout_marginLeft="150dp"
-            android:text="复制"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        android:id="@+id/btn_copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:text="复制"/>
 
     <Button
-            android:layout_toRightOf="@id/btn_copy"
-            android:id="@+id/btn_paste"
-            android:text="粘贴"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        android:id="@+id/btn_paste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn_copy"
+        android:text="粘贴"/>
 
     <Button
-            android:layout_toRightOf="@id/btn_paste"
-            android:id="@+id/btn_save"
-            android:text="保存"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn_paste"
+        android:text="保存"/>
 
     <Button
-            android:layout_marginLeft="20dp"
-            android:layout_toRightOf="@id/btn_save"
-            android:id="@+id/btn_enter_read"
-            android:text="进入回读"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-    <Button
-            android:layout_toRightOf="@id/btn_enter_read"
-            android:id="@+id/btn_read"
-            android:text="回读"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-    <Button
-            android:layout_toRightOf="@id/btn_read"
-            android:id="@+id/btn_exit_read"
-            android:text="退出回读"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-    <TextView
-            android:textSize="@dimen/action_text_size"
-            android:textColor="@color/black"
-            android:layout_marginTop="@dimen/action_top"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@id/btn_copy"
-            android:id="@+id/tv_degree"
-            android:text="10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        android:id="@+id/btn_enter_read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/btn_save"
+        android:text="进入回读"/>
 
     <Button
-            android:layout_marginLeft="@dimen/action_left"
-            android:layout_toRightOf="@id/btn_4"
-            android:layout_below="@id/tv_degree"
-            android:id="@+id/btn_add_degree"
-            android:text="+"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        android:id="@+id/btn_read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn_enter_read"
+        android:text="回读"/>
 
     <Button
-            android:layout_alignBaseline="@id/btn_add_degree"
-            android:layout_alignParentRight="true"
-            android:layout_marginLeft="@dimen/action_number_left"
-            android:layout_below="@id/tv_degree"
-            android:id="@+id/btn_reduce_degree"
-            android:text="-"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        android:id="@+id/btn_exit_read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn_read"
+        android:text="退出回读"/>
 
     <TextView
-            android:layout_alignBaseline="@id/btn_add_degree"
-            android:layout_marginLeft="@dimen/action_number_left"
-            android:textSize="@dimen/action_text_size"
-            android:layout_marginTop="15dp"
-            android:textColor="@color/black"
-            android:id="@+id/tv_degree_start"
-            android:layout_toRightOf="@id/btn_add_degree"
-            android:layout_below="@id/tv_degree"
-            android:text="0"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        android:id="@+id/tv_degree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_copy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/action_top"
+        android:text="10"
+        android:textColor="@color/black"
+        android:textSize="@dimen/action_text_size"/>
+
+    <Button
+        android:id="@+id/btn_add_degree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_degree"
+        android:layout_marginLeft="@dimen/action_left"
+        android:layout_toRightOf="@id/btn_4"
+        android:text="+"/>
+
+    <Button
+        android:id="@+id/btn_reduce_degree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/btn_add_degree"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_degree"
+        android:layout_marginLeft="@dimen/action_number_left"
+        android:text="-"/>
 
     <TextView
-            android:layout_alignBaseline="@id/btn_add_degree"
-            android:textSize="@dimen/action_text_size"
-            android:layout_marginTop="15dp"
-            android:textColor="@color/black"
-            android:id="@+id/tv_degree_end"
-            android:layout_toLeftOf="@id/btn_reduce_degree"
-            android:layout_below="@id/tv_degree"
-            android:text="100"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        android:id="@+id/tv_degree_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/btn_add_degree"
+        android:layout_below="@id/tv_degree"
+        android:layout_marginLeft="@dimen/action_number_left"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/btn_add_degree"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="@dimen/action_text_size"/>
+
+    <TextView
+        android:id="@+id/tv_degree_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/btn_add_degree"
+        android:layout_below="@id/tv_degree"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@id/btn_reduce_degree"
+        android:text="100"
+        android:textColor="@color/black"
+        android:textSize="@dimen/action_text_size"/>
 
     <SeekBar
-            android:padding="15dp"
-            android:layout_marginLeft="@dimen/action_number_left"
-            android:layout_marginRight="@dimen/action_number_left"
-            android:layout_toRightOf="@id/tv_degree_start"
-            android:layout_toLeftOf="@id/tv_degree_end"
-            android:layout_below="@id/tv_degree"
-            android:id="@+id/sb_degree"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        android:id="@+id/sb_degree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_degree"
+        android:layout_marginLeft="@dimen/action_number_left"
+        android:layout_marginRight="@dimen/action_number_left"
+        android:layout_toLeftOf="@id/tv_degree_end"
+        android:layout_toRightOf="@id/tv_degree_start"
+        android:padding="15dp"/>
 
 
     <TextView
-            android:textColor="@color/black"
-            android:textSize="@dimen/action_text_size"
-            android:layout_marginTop="@dimen/action_top"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@id/btn_add_degree"
-            android:id="@+id/tv_time"
-            android:text="10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_add_degree"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/action_top"
+        android:text="10"
+        android:textColor="@color/black"
+        android:textSize="@dimen/action_text_size"/>
 
 
     <Button
-            android:layout_marginLeft="@dimen/action_left"
-            android:layout_toRightOf="@id/btn_4"
-            android:layout_below="@id/tv_time"
-            android:id="@+id/btn_add_time"
-            android:text="+"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        android:id="@+id/btn_add_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_time"
+        android:layout_marginLeft="@dimen/action_left"
+        android:layout_toRightOf="@id/btn_4"
+        android:text="+"/>
 
     <Button
-            android:layout_alignParentRight="true"
-            android:layout_marginLeft="@dimen/action_number_left"
-            android:layout_below="@id/tv_time"
-            android:id="@+id/btn_reduce_time"
-            android:text="-"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        android:id="@+id/btn_reduce_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_time"
+        android:layout_marginLeft="@dimen/action_number_left"
+        android:text="-"/>
 
     <TextView
-            android:layout_marginLeft="@dimen/action_number_left"
-            android:textSize="@dimen/action_text_size"
-            android:layout_marginTop="15dp"
-            android:textColor="@color/black"
-            android:id="@+id/tv_time_start"
-            android:layout_toRightOf="@id/btn_add_time"
-            android:layout_below="@id/tv_time"
-            android:text="0"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        android:id="@+id/tv_time_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_time"
+        android:layout_marginLeft="@dimen/action_number_left"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/btn_add_time"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="@dimen/action_text_size"/>
 
     <TextView
-            android:layout_marginLeft="@dimen/action_number_left"
-            android:textSize="@dimen/action_text_size"
-            android:layout_marginTop="15dp"
-            android:textColor="@color/black"
-            android:id="@+id/tv_time_end"
-            android:layout_toLeftOf="@id/btn_reduce_time"
-            android:layout_below="@id/tv_time"
-            android:text="100"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        android:id="@+id/tv_time_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_time"
+        android:layout_marginLeft="@dimen/action_number_left"
+        android:layout_marginTop="15dp"
+        android:layout_toLeftOf="@id/btn_reduce_time"
+        android:text="100"
+        android:textColor="@color/black"
+        android:textSize="@dimen/action_text_size"/>
 
     <SeekBar
-            android:padding="15dp"
-            android:layout_marginLeft="@dimen/action_number_left"
-            android:layout_marginRight="@dimen/action_number_left"
-            android:layout_toRightOf="@id/tv_time_start"
-            android:layout_toLeftOf="@id/tv_time_end"
-            android:layout_below="@id/tv_time"
-            android:id="@+id/sb_time"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        android:id="@+id/sb_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_time"
+        android:layout_marginLeft="@dimen/action_number_left"
+        android:layout_marginRight="@dimen/action_number_left"
+        android:layout_toLeftOf="@id/tv_time_end"
+        android:layout_toRightOf="@id/tv_time_start"
+        android:padding="15dp"/>
 
     <LinearLayout
-            android:id="@+id/ll"
-            android:layout_marginRight="20dp"
-            android:layout_alignParentRight="true"
-            android:layout_below="@id/sb_time"
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp">
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/sb_time"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
 
         <EditText
-                android:maxLength="6"
-                android:hint="修改选中帧的名字"
-                android:id="@+id/edit_text"
-                android:layout_width="300dp"
-                android:layout_height="match_parent"/>
+            android:id="@+id/edit_text"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:hint="修改选中帧的名字"
+            android:maxLength="6"/>
 
         <Button
-                android:id="@+id/btn_sure"
-                android:text="确定"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+            android:id="@+id/btn_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"/>
     </LinearLayout>
 
     <LinearLayout
-            android:layout_below="@id/ll"
-            android:layout_alignParentBottom="true"
-            android:orientation="horizontal"
-            android:layout_gravity="bottom"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/ll"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
 
         <Button
-                android:background="@drawable/btn_meticulous_play_single"
-                android:id="@+id/btn_play"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+            android:id="@+id/btn_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_meticulous_play_single"/>
 
         <android.support.v7.widget.RecyclerView
 
-                android:id="@+id/rv_frame"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+            android:id="@+id/rv_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
 
         <Button
-                android:id="@+id/btn_create"
-                android:background="@mipmap/meticulous_add_normal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+            android:id="@+id/btn_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/meticulous_add_normal"/>
 
 
     </LinearLayout>

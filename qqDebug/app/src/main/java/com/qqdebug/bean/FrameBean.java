@@ -8,15 +8,17 @@ import java.io.Serializable;
  * @Author lixiangxiang
  */
 
-public class FrameBean implements Cloneable,Serializable {
+public class FrameBean implements Cloneable, Serializable {
 
 
-    private int runTime =1000;
+    private int runTime = 1000;
 
     private MotorBean[] mMotorBeen = new MotorBean[7];
 
-    public FrameBean(){
-        for (int i = 0 ; i<7 ; i++){
+    private LedBean mLedBean;
+
+    public FrameBean() {
+        for (int i = 0; i < 7; i++) {
             mMotorBeen[i] = new MotorBean();
         }
         mMotorBeen[0].setId(1);
@@ -33,6 +35,11 @@ public class FrameBean implements Cloneable,Serializable {
         mMotorBeen[5].setDegree(0);
         mMotorBeen[6].setId(7);
         mMotorBeen[6].setDegree(0);
+
+        mLedBean = new LedBean();
+        mLedBean.setLedId(1);
+        mLedBean.setLedColor(0);
+        mLedBean.setLedFrequency(-1);
     }
 
     private boolean isSelect;//是否被选中
@@ -63,16 +70,16 @@ public class FrameBean implements Cloneable,Serializable {
         this.runTime = runTime;
     }
 
+    public LedBean getLedBean() {
+        return mLedBean;
+    }
+
     public MotorBean[] getMotorBeen() {
         return mMotorBeen;
     }
 
-    public void setMotorBeen(MotorBean[] motorBeen) {
-        mMotorBeen = motorBeen;
-    }
-
     @Override
-    public FrameBean clone(){
+    public FrameBean clone() {
         try {
             return (FrameBean) super.clone();
         } catch (CloneNotSupportedException e) {
@@ -85,7 +92,7 @@ public class FrameBean implements Cloneable,Serializable {
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("time=").append(runTime);
-        for (int i =0 ;i<7 ;i++){
+        for (int i = 0; i < 7; i++) {
             sb.append("id=").append(mMotorBeen[i].getId()).append("degree=").append(mMotorBeen[i].getDegree());
         }
         return sb.toString();

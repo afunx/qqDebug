@@ -3,7 +3,9 @@ package com.qqdebug.adapter;
 import com.qqdebug.ActionDebugActivity;
 import com.qqdebug.R;
 import com.qqdebug.bean.FrameBean;
+import com.ubt.ip.client.api.LedApi;
 import com.ubt.ip.client.api.MotorApi;
+import com.ubt.ip.client.bean.LedBean;
 import com.ubt.ip.client.bean.MotorBean;
 import com.ubt.ip.client.listener.MotorListener;
 import com.ubt.ip.client.net.MotorNet;
@@ -73,6 +75,11 @@ public class FrameAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
                         bean.setMotorId(mFrameBeens.get(position).getMotorBeen()[i].getId());
                         lists.add(bean);
                     }
+                    // TODO afunx 播放Led灯效
+                    final LedBean ledBean = new LedBean();
+                    ledBean.setLedId(mFrameBeens.get(position).getLedBean().getLedId());
+                    ledBean.setLedFrequency(mFrameBeens.get(position).getLedBean().getLedFrequency());
+                    ledBean.setLedColor(mFrameBeens.get(position).getLedBean().getLedColor());
                     new Thread() {
                         @Override
                         public void run() {
@@ -80,6 +87,8 @@ public class FrameAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> 
                                 @Override
                                 public void onStart() {
                                     Log.i(TAG, "onStart");
+                                    // TODO afunx 播放Led灯效
+                                    LedApi.get().setLed(ledBean);
                                 }
 
                                 @Override
