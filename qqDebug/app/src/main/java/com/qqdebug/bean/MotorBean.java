@@ -31,7 +31,11 @@ public class MotorBean implements Cloneable,Serializable {
     }
 
     @Override
-    public MotorBean clone() throws CloneNotSupportedException {
-        return (MotorBean)super.clone();
+    public MotorBean clone() {
+        try {
+            return (MotorBean) super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new UnsupportedOperationException(e);
+        }
     }
 }

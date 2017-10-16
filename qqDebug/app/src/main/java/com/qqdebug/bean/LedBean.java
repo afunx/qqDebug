@@ -2,13 +2,15 @@ package com.qqdebug.bean;
 
 import android.util.Log;
 
+import java.io.Serializable;
+
 /**
  * Created by afunx on 10/10/2017.
  * <p>
  * Led Bean
  */
 
-public class LedBean {
+public class LedBean implements Cloneable, Serializable {
 
     /**
      * Led id
@@ -47,5 +49,14 @@ public class LedBean {
 
     public void setLedFrequency(int ledFrequency) {
         mLedFrequency = ledFrequency;
+    }
+
+    @Override
+    public LedBean clone() {
+        try {
+            return (LedBean) super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new UnsupportedOperationException(e);
+        }
     }
 }

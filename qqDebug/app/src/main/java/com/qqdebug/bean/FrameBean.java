@@ -74,17 +74,29 @@ public class FrameBean implements Cloneable, Serializable {
         return mLedBean;
     }
 
+    public void setLedBean(LedBean ledBean) {
+        mLedBean = ledBean;
+    }
+
     public MotorBean[] getMotorBeen() {
         return mMotorBeen;
+    }
+
+    public void setMotorBeen(MotorBean[] motorBeen) {
+        mMotorBeen = motorBeen;
     }
 
     @Override
     public FrameBean clone() {
         try {
-            return (FrameBean) super.clone();
+            FrameBean frameBean = (FrameBean) super.clone();
+            for (int i = 0; i < 7; i++) {
+                frameBean.getMotorBeen()[i] = this.getMotorBeen()[i].clone();
+            }
+            frameBean.setLedBean(frameBean.getLedBean().clone());
+            return frameBean;
         } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
-            return new FrameBean();
+            throw new UnsupportedOperationException(e);
         }
     }
 
